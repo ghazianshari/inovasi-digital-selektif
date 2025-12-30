@@ -128,22 +128,21 @@ const LayananPPOB = () => {
                 </div>
               ))}
             </div>
-          </div>
-
-          {/* Carousel Indicators */}
-          <div className="flex justify-center gap-2 mt-8">
-            {layanan.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentSlide(index)}
-                className={`h-2 rounded-full transition-all duration-300 ${
-                  index === currentSlide
-                    ? "w-8 bg-(--color-button) border-transparent"
-                    : "w-2 bg-transparent border-2 border-(--color-button)"
-                }`}
-                aria-label={`Go to slide ${index + 1}`}
-              />
-            ))}
+            {/* Carousel Indicators */}
+            <div className="flex justify-center gap-2 mt-8">
+              {layanan.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentSlide(index)}
+                  className={`h-2 rounded-full transition-all duration-300 ${
+                    index === currentSlide
+                      ? "w-8 bg-(--color-button) border-transparent"
+                      : "w-2 bg-transparent border-2 border-(--color-button)"
+                  }`}
+                  aria-label={`Go to slide ${index + 1}`}
+                />
+              ))}
+            </div>
           </div>
 
           {/* Touch/Swipe handlers */}
