@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Hero = () => {
   return (
     <section
@@ -81,14 +83,11 @@ const Hero = () => {
           </div>
 
           {/* Right Content - Image positioned at top-right corner */}
-          <div
-            className="lg:absolute lg:right-0 lg:top-0 lg:w-[55%]"
-            data-aos="fade-left"
-            data-aos-delay="200"
-            data-aos-duration="1000"
-          >
-            <img
-              src="/assets/hero/cewe-cewe-hero.svg"
+          <div className="lg:absolute lg:right-0 lg:top-0 lg:w-[51.72%]">
+            <Image
+            width={1000}
+            height={1000}
+              src="/assets/hero/bg-hero.png"
               alt="Business professionals discussing"
               className="w-full h-full object-cover"
             />
